@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaditya's Website</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset  */
+    body {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Spline Sans', sans-serif;
+        background: url("img/bg.png") no-repeat;
+        background-size: cover;
+
+    }
+
+    /*
+    .img {
+        background: url("img/bg.png") no-repeat fixed center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+
+    }
+*/
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 50px;
+    }
+
+    .left img {
+        width: 65px;
+        height: auto;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 0.8rem;
+        /* line-height: 5px; */
+    }
+
+    .mid {
+        position: relative;
+        display: inline-block;
+        /* border: 2px solid green; */
+        width: 45%;
+        left: 495px;
+        top: 12px;
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        /* border: 2px solid saddlebrown; */
+        display: inline-block;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 30px;
+    }
+
+    .navbar li a:active,
+    .navbar li a:hover {
+
+        text-decoration: underline;
+        color: rgb(220, 142, 24);
+
+    }
+
+
+    .btn {
+        margin: 0px 9px;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #565656;
+        border-radius: 8px;
+        padding: 5px 4px;
+        cursor: pointer;
+        font-family: 'Spline Sans', sans-serif;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(60, 61, 61);
+        color: rgb(220, 142, 24);
+        font-family: 'Spline Sans', sans-serif;
+
+
+    }
+
+    .container {
+        border: 2px solid rgb(246, 245, 245);
+        margin: 200px 845px;
+        padding: 26px 30px;
+        border-radius: 2px;
+        width: 33%;
+        top: 50px;
+        font-family: 'Spline Sans', sans-serif;
+
+    }
+
+    .container h1 {
+        font-size: 23px;
+        text-align: center;
+        font-family: 'Spline Sans', sans-serif;
+
+    }
+
+    .form-group input {
+
+        font-size: 17px;
+        text-align: center;
+        display: block;
+        padding: 7px 60px;
+        border: 2px solid black;
+        margin: 10px auto;
+        border-radius: 8px;
+        font-family: 'Spline Sans', sans-serif;
+
+
+    }
+
+    .container button {
+        display: block;
+        margin: 5px auto;
+        font-family: 'Spline Sans', sans-serif;
+        padding: 10px 35px;
+
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo  -->
+        <div class="left">
+
+            <img src="img/logo.png" alt="Logo PNG">
+            <div class="content">GYM Logo</div>
+
+        </div>
+        <!-- mid box for Navbar  -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About US</a></li>
+                <li><a href="fitnessCalculator.html">Fitness Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn" onclick="location.href='contact.html'">
+                Call Us Now
+            </button>
+            <button class="btn" onclick="location.href='contact.html'">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Ahmedabad Now</h1>
+        <form action="store.php" method="post">
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter Your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter Your Gender">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="Locality" placeholder="Enter Your Locality">
+
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
